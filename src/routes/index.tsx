@@ -45,46 +45,6 @@ import { useCountUp } from "@/hooks/use-count-up";
 import { useReveal } from "@/hooks/use-reveal";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Corner Street Deli — Fresh Sandwiches, Salads & Catering" },
-      {
-        name: "description",
-        content:
-          "Family-owned local deli serving fresh sandwiches, premium deli meats, homemade salads, breakfast sandwiches, lunch specials and catering services in the neighborhood.",
-      },
-      { property: "og:title", content: "Corner Street Deli — Fresh Sandwiches & Catering" },
-      {
-        property: "og:description",
-        content:
-          "Handcrafted sandwiches, premium meats, homemade salads, and catering — made fresh daily by your local family-owned deli.",
-      },
-      { property: "og:image", content: "/og-deli.jpg" },
-      { property: "og:url", content: "/" },
-    ],
-    links: [{ rel: "canonical", href: "/" }],
-    scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Restaurant",
-          name: "Corner Street Deli",
-          servesCuisine: ["Deli", "Sandwiches", "American"],
-          priceRange: "$$",
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: "412 Maple Avenue",
-            addressLocality: "Greenfield",
-            addressRegion: "NY",
-            postalCode: "10001",
-          },
-          telephone: "+1-555-123-4567",
-          aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "412" },
-        }),
-      },
-    ],
-  }),
   component: Index,
 });
 
