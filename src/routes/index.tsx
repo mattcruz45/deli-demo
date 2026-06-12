@@ -84,7 +84,7 @@ function Nav() {
             <span
               className={`font-display text-lg font-bold ${scrolled ? "text-foreground" : "text-white"}`}
             >
-              Corner Street
+              Cruz
             </span>
             <span
               className={`text-[10px] uppercase tracking-[0.2em] ${
@@ -338,7 +338,7 @@ function About() {
           <div className="absolute -bottom-4 -right-4 hidden h-40 w-40 rounded-full bg-accent/15 sm:block" />
           <img
             src={aboutInterior}
-            alt="Inside Corner Street Deli — counter and meat case"
+            alt="Inside Cruz Deli — counter and meat case"
             loading="lazy"
             className="relative h-[520px] w-full rounded-3xl object-cover shadow-xl"
           />
@@ -714,7 +714,7 @@ function Catering() {
           </div>
 
           <a
-            href="mailto:catering@cornerstreetdeli.com"
+            href="mailto:mattcruz4545@gmail.com"
             className="mt-8 inline-flex items-center gap-2 rounded-full bg-primary px-7 py-4 text-sm font-semibold text-primary-foreground transition hover:bg-[var(--deli-red-deep)]"
           >
             Request Catering Quote <ArrowRight className="h-4 w-4" />
@@ -758,7 +758,7 @@ function Contact() {
           <InfoCard
             icon={Phone}
             title="Contact"
-            lines={["(555) 123-4567", "hello@cornerstreetdeli.com"]}
+            lines={["(555) 123-4567", "mattcruz4545@gmail.com"]}
             cta={{ label: "Call Now", href: "tel:+15551234567" }}
           />
         </div>
@@ -766,7 +766,7 @@ function Contact() {
         <div className="mt-10 grid gap-6 lg:grid-cols-[2fr_1fr]">
           <div className="relative h-[360px] overflow-hidden rounded-3xl border border-border bg-card shadow-sm">
             <iframe
-              title="Corner Street Deli map"
+              title="Cruz Deli map"
               src="https://www.openstreetmap.org/export/embed.html?bbox=-74.01%2C40.71%2C-73.99%2C40.72&layer=mapnik"
               className="h-full w-full"
               loading="lazy"
@@ -889,7 +889,7 @@ function Footer() {
             <span className="grid h-10 w-10 place-items-center rounded-full bg-primary">
               <Sandwich className="h-5 w-5" />
             </span>
-            <span className="font-display text-xl font-bold">Corner Street Deli</span>
+            <span className="font-display text-xl font-bold">Cruz Deli</span>
           </a>
           <p className="mt-4 text-sm">
             Your family-owned local deli, serving fresh sandwiches, premium deli meats,
@@ -927,7 +927,7 @@ function Footer() {
       </div>
       <div className="border-t border-white/10">
         <div className="container-deli flex flex-col items-center justify-between gap-2 py-6 text-xs text-white/60 sm:flex-row">
-          <p>© {new Date().getFullYear()} Corner Street Deli. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Cruz Deli. All rights reserved.</p>
           <p>Crafted with care in the neighborhood.</p>
         </div>
       </div>
