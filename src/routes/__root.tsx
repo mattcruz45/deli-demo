@@ -77,19 +77,26 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Corner Street Deli — Fresh Sandwiches & Catering" },
+      {
+        name: "description",
+        content:
+          "Family-owned neighborhood deli serving handcrafted sandwiches, premium meats, fresh salads, and catering. Made fresh daily.",
+      },
+      { property: "og:title", content: "Corner Street Deli — Fresh Sandwiches & Catering" },
+      {
+        property: "og:description",
+        content:
+          "Handcrafted sandwiches, premium deli meats, homemade salads, and catering from your local family-owned deli.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&display=swap",
       },
     ],
   }),
