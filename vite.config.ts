@@ -8,7 +8,7 @@ import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
 // (GitHub Pages, Netlify, S3, etc.). `base: "./"` makes asset URLs relative so
 // the app works under any subpath (e.g. https://user.github.io/repo/).
 export default defineConfig({
-  base: "./",
+  base: "/deli-demo/",
   plugins: [
     TanStackRouterVite({ target: "react", autoCodeSplitting: true }),
     react(),
